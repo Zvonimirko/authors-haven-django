@@ -46,7 +46,7 @@ class Profile(TimeStampedModel):
         null=False,
     )
     profile_photo = models.ImageField(
-        verbose_name=_("profile photo"), default="/profile_default.png"
+        verbose_name=_("profile photo"), default="profile_default.png"
     )
     twitter_handle = models.CharField(
         verbose_name=_("twitter handle"), max_length=20, blank=True
