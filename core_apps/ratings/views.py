@@ -14,6 +14,7 @@ class RatingCreateView(generics.CreateAPIView):
 
     def perform_create(self, serializer):
         article_id = self.kwargs.get("article_id")
+
         if article_id:
             try:
                 article = Article.objects.get(id=article_id)
