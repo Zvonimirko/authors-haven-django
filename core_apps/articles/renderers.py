@@ -1,4 +1,5 @@
 import json
+
 from rest_framework.renderers import JSONRenderer
 
 
@@ -23,6 +24,7 @@ class ArticleJSONRenderer(JSONRenderer):
 
 
 import json
+
 from rest_framework.renderers import JSONRenderer
 
 
